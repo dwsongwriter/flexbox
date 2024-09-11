@@ -1,0 +1,44 @@
+.parent {
+    border: 5px purple solid;
+}
+
+.child {
+    /* margin: 5px; */
+    background-color:cadetblue;
+    color: white;   
+}
+
+.parent {
+    display: flex;
+    /*align-items: center;
+    flex-direction: column-reverse; */
+    flex-wrap: wrap;
+    min-height: 300px;
+    align-items: start;
+    justify-content: start;
+    /* align-content: space-between; */
+    flex-direction: row-reverse;
+    gap:25px;
+}
+
+.child {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    justify-content: space-evenly;
+}
+
+.child:nth-child(2) {
+    background-color: pink;
+    order: 4;
+}
+
+.child:nth-child(3) {
+    background-color: purple;
+    /* align-self: end; */
+    /* flex-grow:2; */
+}
+
+.child:nth-child(4) {
+    background-color: green;
+}
